@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-image: url(../assets/img/hero/herobg-herobg.svg);
+}
+
+/* .container {
+    display: flex;
+} */
+
+.information-column {
+    padding: 40px;
+    background-color: #0e2c13;
+    color: #fff;
+    text-align: center;
+}
+
+.information-column hr {
+    border: none;
+    border-bottom: 1px solid #4a9735;
+    margin-top: 18px;
+}
+
+.information-column img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #4a9735;
+    margin-bottom: 18px;
+}
+
+.information-column h3 {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.information-column ul {
+    list-style-type: none;
+}
+
+.information-column li {
+    text-align: left;
+    margin: 10px 0;
+}
+
+.contact-description a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contact-description i {
+    color: #4a9735;
+    margin-right: 10px;
+}
+
+.education-descripition {
+    margin-top: 32px;
+}
+
+.education-descripition p {
+    color: #4a9735;
+}
+
+.language-description .percent {
+    border-radius: 3px;
+    height: 6px;
+    background-color: #DABBB5;
+    margin-top: 5px;
+    width: 205px;
+}
+
+.language-description .percent div {
+    border-radius: 3px;
+    height: 6px;
+    background-color: #4a9735;
+}
+
+.language-description .percent.spanish div {
+    width: 95%;
+}
+
+.language-description .percent.english div {
+    width: 40%;
+}
+
+.skills-description .percent {
+    border-radius: 3px;
+    height: 6px;
+    background-color: #DABBB5;
+    margin-top: 5px;
+    width: 205px;
+}
+
+.skills-description .percent div {
+    border-radius: 3px;
+    height: 6px;
+    background-color: #4a9735;
+}
+
+.skills-description .percent.css div {
+    width: 90%;
+}
+
+.skills-description .percent.js div {
+    width: 65%;
+}
+
+.skills-description .percent.react div {
+    width: 35%;
+}
+
+.skills-description .percent.node div {
+    width: 35%;
+}
+
+.skills-description .percent.git div {
+    width: 100%;
+}
+
+.skills-description .percent.github div {
+    width: 100%;
+}
+
+.experiences-column {
+    background-color: #fff;
+    padding: 40px;
+    color: #000;
+}
+
+.experiences-column section {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.experiences-column h2 {
+    margin-bottom: 15px;
+}
+
+.experiences-column .experience {
+    margin-left: 14px;   
+    text-align: justify;
+}
+
+.experiences-column .experience-date {
+    /*background-color: #4a9735;*/
+    padding-top: 1.4rem;
+}
+
+.experiences-column a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.experiences-column .last-date {
+    text-align: right;
+}
+
+
+@media (min-width: 992px) {
+    .container {
+        display: flex;
+    }
+
+    .information-column img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .experiences-column h2 {
+        margin-bottom: 15px;
+        text-align: justify;
+        /* word-spacing: 8px; */
+    }
+
+    .experiences-column {
+        width: 100%;
+    }
+
+    .experiences-column .experience {
+        display: flex;
+        text-align: justify;
+        /* word-spacing: 8px; */
+    }
+
+    .experiences-column .experience-date {
+        /*background-color: #4a9735;*/
+        padding-top: 1.4rem;
+    }
+
+    .experience-date {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 120px;
+        width: 175px;
+    }
+
+    .experience-text {
+        display: block;
+        /* height: 150px; */
+        width: 100%;
+        margin: 20px;
+    }
+
+    .projects {
+        text-align: justify;
+        padding: .3rem;
+        /* word-spacing: 8px; */
+    }
+
+    .experience-date {
+        width: 300px;
+    }
+}
+
+.projects h2, p {
+    padding: .3rem;
+}
