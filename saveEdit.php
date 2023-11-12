@@ -1,6 +1,7 @@
 <?php
     // isset -> serve para saber se uma variável está definida
     include_once('config.php');
+    
     if(isset($_POST['update']))
     {
         $id = $_POST['id'];
@@ -18,5 +19,6 @@
         print_r($result);
     }
     header('Location: tables.php');
+
 
 ?>

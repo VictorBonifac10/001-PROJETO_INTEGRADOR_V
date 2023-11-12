@@ -115,6 +115,8 @@ if(isset($_POST['submit'])){
                     <!-- Content Row -->
                     <div class="row">
 
+                    <script src="darkMode.js"></script>
+
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-xl-3 col-md-6 mb-4">
                             <div class="card border-left-primary shadow h-100 py-2">
@@ -352,27 +354,30 @@ if(isset($_POST['submit'])){
                         </div>
                     </div>
 
-                <br><h1 class="h3 mb-2 text-gray-800">Atenção: </h1>
-            <p class="mb-4">Valores a receber:</p> 
-            <p>Valores gastos no mes de <?php echo date('F'); ?>:</p> 
-
 <!-- Outer Row -->
+
+<hr><br><h1 class="h3 mb-2 text-gray-800">Requisições: </h1>
+            <p class="mb-4">
+                Faça o cadastro de suas Requisições/Pedidos abaixo e tenha um controle maior de sua suas solicitações no campo "REQUISIÇÕES" no menu localizado a esquerda de seu perfil
+                mas <b>ATENÇÃO: </b><?php echo "Faltam <b> $diasRestantes</b> dias para o final do mês."; ?>
+            </p> 
+
 <div class="row justify-content-center">
 <div class="col-xl-10 col-lg-12 col-md-9">
-<h1 class="h3 mb-0 text-gray-800">Requisições</h1>
+
     <div class="card o-hidden border-0 shadow-lg my-5">
                 <div class="card-body p-0">
             <!-- Nested Row within Card Body -->
             <div class="row">
                 <div class="col-lg-6 d-none d-lg-block bg-image">
-                <img src="assets/img/dest/dest3.jpg" width="480px" heigth="450px" alt="service" />
+                <img src="assets/img/dest/dest3.jpg" width="500px" heigth="450px" alt="service" />
                 </div>
                 <div class="col-lg-6">
                     <div class="p-5">
                         <div class="text-center">
                             <h1 class="h4 text-gray-900 mb-4 form-custom">Cadastre uma Requisição!</h1>
                         </div>
-                        <form class="user form-custom" action="perfil.php" method="POST"><style>.form-custom{margin-left:30px;}</style>
+                        <form class="user form-custom" action="perfil.php" method="POST"><style>.form-custom{margin-left:35px;}</style>
                             <div class="form-group">
                                 <input type="text"  name="solicitante" class="InputUser form-control form-control-user"
                                     id="solicitante" placeholder="Solicitante" required>

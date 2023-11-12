@@ -44,7 +44,7 @@ $logado = $_SESSION['email'];
         
         <h1 class="h3 mb-2 text-gray-800">Lista de Insumos:</h1>
         <p class="mb-4">
-            Tenha acesso a uma lista completa de Insumos Ôganicos e Não Ôganicos para o controle de Parasitas e Plantas Invasoras durante o seu cultivo.
+            Tenha acesso a uma lista completa de Insumos Ôrganicos e Não Ôrganicos para o controle de Parasitas e Plantas Invasoras durante o seu cultivo.
             <b>Clique</b> em um dos itens abaixo e saiba quais Parasitas podem ser combatidos com o uso destas matérias.
         </p> 
 

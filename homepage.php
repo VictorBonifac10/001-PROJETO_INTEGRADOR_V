@@ -9,12 +9,12 @@ include("cabecalho.php");
             <h1>Administre o seu fluxo de encomendas</h1>
             <h6 class="mb-4">Utilize todas as ferramentas necessárias e gerencie sua microempresa rural.</h6>
             <a
-              href="#"
+              href="cadst.php"
               class="button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2"
               >Saiba mais</a
             >
             <a
-              href="#"
+              href="cadst.php"
               class="button btn btn-outline-primary button-primary-outline d-md-inline-block d-block"
               >Contato</a
             >
@@ -48,7 +48,7 @@ include("cabecalho.php");
               <br><br>
               Junte-se a nós nessa jornada de capacitar os microempresários rurais, impulsionando o crescimento de seus negócios e contribuindo para um futuro mais sustentável e inclusivo. Agradecemos por fazer parte dessa missão!
             </p>
-            <a href="#" class="btn btn-primary button button-primary"
+            <a href="cadst.php" class="btn btn-primary button button-primary"
               >Entre em contato</a
             >
           </div>

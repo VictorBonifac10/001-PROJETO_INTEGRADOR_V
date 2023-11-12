@@ -6,7 +6,9 @@
         <div class="logo py-4">
           <div class="row">
             <div class="col-md-6 align-self-center text-md-left text-center">
-              <img src="./assets/img/logo.svg" width="90px" height="90px" class="img-fluid" />
+              <a class="navbar-brand" href="homepage.php">
+                <img src="./assets/img/dest/logo.png" width="90px" height="90px" class="img-fluid" />
+              </a>
             </div>
             <div class="col-md-6 align-self-center text-right">
               <ul>

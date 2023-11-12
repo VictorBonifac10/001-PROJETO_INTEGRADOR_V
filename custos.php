@@ -201,24 +201,6 @@ $result = $conexao->query($sql);
         }
     ?>
 
-
-    <!-- JavaScript-
-    <script>
-        var search = document.getElementById('pesquisar');
-
-        search.addEventListener("keydown", function(event) {
-            if (event.key === "Enter") 
-            {
-                searchData();
-            }
-        });
-
-        function searchData()
-        {
-            window.location = 'sistema.php?search='+search.value;
-        }
-    </script>-->
-
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -233,9 +215,6 @@ $result = $conexao->query($sql);
     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
-
     <!-- Script para o funcionamento do delete -->
     <script>
         $('#successModal').on('show.bs.modal', function (event) {
@@ -245,9 +224,6 @@ $result = $conexao->query($sql);
             modal.find('.modal-footer a').attr('href', 'deleteCustos.php?id=' + id);
         });
     </script>
-
-
-
 
 </body>
 

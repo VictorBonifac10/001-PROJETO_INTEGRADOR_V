@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Import the Firebase SDK -->
+    <script type="module">
+        import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js';
+        import { initializeFirestore } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js';
+
+        // Initialize Firebase
+        const firebaseConfig = {
+            apiKey: "AIzaSyCuP7RxCIk1zBRnYYVSAOFN4Jkwj0XvqQk",
+            authDomain: "impulseagro2.firebaseapp.com",
+            projectId: "impulseagro2",
+            storageBucket: "impulseagro2.appspot.com",
+            messagingSenderId: "191908094745",
+            appId: "1:191908094745:web:07388899ecb23e88975b88",
+            measurementId: "G-VH6R5DHTZ8"
+        };
+
+        const firebaseApp = initializeApp(firebaseConfig);
+
+        // Access Firestore using the firebase keyword
+        const db = initializeFirestore(firebaseApp);
+
+        db.collection("clientes_prj5").doc("1").get().then(function (doc) {
+            if (doc.exists) {
+                console.log("Existe");
+            } else {
+                console.log("Não Existe");
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
