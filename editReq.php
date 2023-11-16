@@ -75,7 +75,7 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Alterar Dados!</h1>
                                     </div>
-                                    <form action="saveEdit.php" method="POST">
+                                    <form action="saveEditReq.php" method="POST">
                                         <div class="form-group">
                                             <input type="text"  name="solicitante" class="InputUser form-control form-control-user"
                                                 id="solicitante" value=<?php echo $solicitante;?> placeholder="Solicitante" required>

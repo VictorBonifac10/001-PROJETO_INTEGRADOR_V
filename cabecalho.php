@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/magnific-popup.css" />
     <link rel="stylesheet" href="css/main.css" />
 
-    <title>IMPIULSE AGRO</title>
+    <title>IMPULSE AGRO</title>
   </head>
   <body>
     <!--HEADER-->

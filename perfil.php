@@ -1,20 +1,20 @@
 <?php 
 
 session_start();
-//print_r($_SESSION);
-
-if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true) )
+include_once('config.php');
+// print_r($_SESSION);
+if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
 {
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('Location: login.php');
+    header('Location: log.php');
 }
-
 $logado = $_SESSION['email'];
 
-//--------------------------------------------------------
+$sql = "SELECT * FROM clientes_prj5 ORDER BY id DESC";
+$result = $conexao->query($sql);
 
-include_once('config.php');
+//--------------------------------------------------------
 
 if(isset($_POST['submit'])){
     include_once('config.php');
@@ -111,7 +111,6 @@ if(isset($_POST['submit'])){
                 <?php 
                 include('menuPerfil.php');
                 ?>
-
                     <!-- Content Row -->
                     <div class="row">
 

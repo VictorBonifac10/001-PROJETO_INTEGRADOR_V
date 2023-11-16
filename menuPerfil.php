@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -21,18 +20,6 @@
     <link href="assets/css/sb-admin-2.css" rel="stylesheet">
     <link href="assets/css/sb-admin-2.min.css" rel="stylesheet">
     <link href="assets/css/sistema.css" rel="stylesheet">
-
-    <script type="module">
-            import { initializeApp } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js'
-    
-            // If you enabled Analytics in your project, add the Firebase SDK for Google Analytics
-            import { getAnalytics } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-analytics.js'
-    
-            // Add Firebase products that you want to use
-            import { getAuth } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js'
-            import { getFirestore } from 'https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js'
-            
-    </script>
 
 </head>
 
@@ -79,12 +66,11 @@
                     <i class="fas fa-fw fa-cog"></i>
                     <span>CONFIGURAÇÕES</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
-                    <div class="bg-white py-2 collapse-inner rounded">
+ <!--               <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                   <div class="bg-white py-2 collapse-inner rounded">
                         <h6 class="collapse-header">ALTERAR:</h6>
-                        <a class="collapse-item" href="editPerfil.php?id=<?php echo $user_data['id']; ?>">PERFIL</a>                                  
                     </div>
-                </div>
+                </div>-->
             </li>
 
             <!-- Divider -->
@@ -328,10 +314,6 @@
                             <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
-                                <a class="dropdown-item" href="editPerfil.php">
-                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                                    Perfil
-                                </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="sair.php" data-toggle="modal" data-target="#logoutModal">
                                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
@@ -363,3 +345,19 @@
                             </script>
 
                     </div>
+
+                    <script>
+                        var search = document.getElementById('pesquisar');
+
+                        search.addEventListener("keydown", function(event) {
+                            if (event.key === "Enter") 
+                            {
+                                searchData();
+                            }
+                        });
+
+                        function searchData()
+                        {
+                            window.location = 'perfil.php?search='+search.value;
+                        }
+                    </script>
